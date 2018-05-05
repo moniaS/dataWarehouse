@@ -11,7 +11,6 @@ CREATE TABLE Czas
   dzien int,
   miesiac int,
   rok int,
-  sezon char(50),
   CONSTRAINT klucz_czas PRIMARY KEY (czas_id)
 );
 
@@ -23,23 +22,20 @@ CREATE TABLE Nieruchomosc
   CONSTRAINT klucz_nieruchomosc PRIMARY KEY (nieruchomosc_id)	
 )
 
-CREATE TABLE Licencja
-( licencja_id int NOT NULL,
+CREATE TABLE Wniosek_o_licencje
+( wniosek_id int NOT NULL,
   status varchar(15),
   rodzaj varchar(15),
-  data_zlozenia_wniosku date,
-  data_przyznania_licencji date,
-  nieruchomosc_id int,
-  CONSTRAINT klucz_licencja PRIMARY KEY (licencja_id),
-  FOREIGN KEY (nieruchomosc_id) REFERENCES Nieruchomosc(nieruchomosc_id)
+  CONSTRAINT klucz_wniosek PRIMARY KEY (wniosek_id),
 );
 
-CREATE TABLE Fakt_rozpatrzenia_licencji 
+CREATE TABLE Fakt_rozpatrzenia_wniosku_o_licencje 
 (
-  wnioskodawca_id int NOT NULL REFERENCES Wnioskodawca(wnioskodawca_id),
-  czas_id int NOT NULL REFERENCES Czas(czas_id),
-  licencja_id int NOT NULL REFERENCES Licencja(licencja_id),
-  ilosc_licencji int,
-  CONSTRAINT klucz_fakt_rozpatrzenia_licencji PRIMARY KEY(wnioskodawca_id, licencja_id, czas_id)
+  fakt_rozpatrzenia_id int NOT NULL
+  wnioskodawca_id int REFERENCES Wnioskodawca(wnioskodawca_id),
+  wniosek_o_licencje_id int REFERENCES Wniosek_o_licencje(wniosek_id),
+  data_zlozenia_wniosku date REFERENCES Czas(czas_id),
+  data_rozpatrzenia_wniosku date REFERENCES Czas(czas_id),
+  ilosc_wnioskow_o_licencje int,
+  CONSTRAINT klucz_fakt_rozpatrzenia_licencji PRIMARY KEY(fakt_rozpatrzenia_id)
 )
-
