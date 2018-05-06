@@ -1,0 +1,223 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0e82e40a-af99-4ab4-95ba-c7332de235cd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hurtownia Danych - kostka</ID>
+  <Name>Hurtownia Danych - kostka</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="005fffdb-5c2c-4bcf-b9f8-36b74a1fd20e">
+      <ID>Data Rozpatrzenia Wniosku</ID>
+      <Name>Data Rozpatrzenia Wniosku</Name>
+      <DimensionID>Czas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="97140e59-c22e-4f6d-ab08-ada82730860c">
+          <AttributeID>Czas Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ac195340-a021-4b2b-91f2-c88aac2bcdbb">
+      <ID>Wnioskodawca</ID>
+      <Name>Wnioskodawca</Name>
+      <DimensionID>Wnioskodawca</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e9d29196-ed78-44f5-a308-aeab36c42e5c">
+          <AttributeID>Wnioskodawca Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="af9dc5a3-3fc0-49a4-baac-06d3522a5432">
+      <ID>Data Zlozenia Wniosku</ID>
+      <Name>Data Zlozenia Wniosku</Name>
+      <DimensionID>Czas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9ad15484-4433-4ed5-be18-7809296474d5">
+          <AttributeID>Czas Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2dc71194-1711-42c8-8f8b-b8911de111f8">
+      <ID>Wniosek o Licencje</ID>
+      <Name>Wniosek o Licencje</Name>
+      <DimensionID>Wniosek o Licencje</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="43585bf2-55f1-4b7f-b7c5-43672f9b62f3">
+          <AttributeID>Wniosek Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9a7063c2-f661-4f43-87c2-235250239e09">
+      <ID>Nieruchomosc</ID>
+      <Name>Nieruchomosc</Name>
+      <DimensionID>Nieruchomosc</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="568f6302-7c6d-4683-bab0-63656c5ad3ef">
+          <AttributeID>Nieruchomosc Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="025f8a41-b71a-4d23-9981-1137b70c7feb">
+      <ID>Fakt Rozpatrzenia Wniosku o Licencje</ID>
+      <Name>Fakt Rozpatrzenia Wniosku o Licencje</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="5406128b-2fae-42b2-a2eb-75237f395adb">
+          <ID>Ilosc Wnioskow o Licencje</ID>
+          <Name>Ilosc Wnioskow o Licencje</Name>
+          <Source dwd:design-time-name="2bf3f3ea-dd8f-4191-94ae-9356c3c4b11f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="637ece35-e35b-467d-9f3a-ea4e92ffd839">
+              <TableID>dbo_Fakt_rozpatrzenia_wniosku_o_licencje</TableID>
+              <ColumnID>ilosc_wnioskow_o_licencje</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b0340713-288f-493c-ba0e-913462da40c2">
+          <CubeDimensionID>Data Rozpatrzenia Wniosku</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fe9b9499-12d5-481d-959e-268b35e76b39">
+              <AttributeID>Czas Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="63eb275c-27dd-43e7-926f-35cf97dca0a0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e5da6ec7-85fd-4f5b-af89-b7b20825e9f1">
+                    <TableID>dbo_Fakt_rozpatrzenia_wniosku_o_licencje</TableID>
+                    <ColumnID>data_rozpatrzenia_wniosku_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1ffd4003-f528-4adf-9c94-23f35b5478da">
+          <CubeDimensionID>Wnioskodawca</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d965beab-1233-4265-b623-1f30fe821a5d">
+              <AttributeID>Wnioskodawca Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="873324dd-69d5-48e3-b90f-f2dfbcad25a1">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ca98c287-d0c4-4c70-865e-62383b2ed321">
+                    <TableID>dbo_Fakt_rozpatrzenia_wniosku_o_licencje</TableID>
+                    <ColumnID>wnioskodawca_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e9161b98-c590-4e80-a88b-352cc6a7882e">
+          <CubeDimensionID>Data Zlozenia Wniosku</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="337a5cf5-92fd-4eb7-ab82-d11d621ac809">
+              <AttributeID>Czas Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c6eeaf12-956a-4328-a71f-e3f2a76b9917">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="45467a96-4eab-4f1b-ab64-761981197eda">
+                    <TableID>dbo_Fakt_rozpatrzenia_wniosku_o_licencje</TableID>
+                    <ColumnID>data_zlozenia_wniosku_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6e288f82-eb71-446a-b126-b39045ed0bc3">
+          <CubeDimensionID>Wniosek o Licencje</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7f2afd78-e90e-4c03-96b1-7dde0f8ae7f4">
+              <AttributeID>Wniosek Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e6c1fa95-3ea9-459e-9d8e-a89508e1190c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc690e56-1f9a-42a2-aab6-be2374f473a8">
+                    <TableID>dbo_Fakt_rozpatrzenia_wniosku_o_licencje</TableID>
+                    <ColumnID>wniosek_o_licencje_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="29b3fe6e-4de9-4bb0-bb3c-de1f529a4085">
+          <CubeDimensionID>Nieruchomosc</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="335caaf7-4018-4e45-8580-207d0daa753c">
+              <AttributeID>Nieruchomosc Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="45bcbe32-4466-404c-b8f4-d37284c349e6">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9cb5f2f9-2041-49f8-aba8-3187f1ddd4cd">
+                    <TableID>dbo_Fakt_rozpatrzenia_wniosku_o_licencje</TableID>
+                    <ColumnID>nieruchomosc_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="592be2e0-2e5e-4299-bdc2-801418548148">
+    <DataSourceViewID>Hurtownia Danych - widok</DataSourceViewID>
+  </Source>
+</Cube>
