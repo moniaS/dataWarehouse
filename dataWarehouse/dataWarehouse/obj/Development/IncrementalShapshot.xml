@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>Default</ProcessingOption>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,51 +19,51 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>nERqje0HmAbeq/8X1y4u/aEiMX4=2018-05-06 22:00:592018-05-06 21:40:54</TimeStamp>
+        <TimeStamp>nERqje0HmAbeq/8X1y4u/aEiMX4=2018-05-07 11:32:592018-05-06 21:40:54</TimeStamp>
         <ID>
           <String>Hurtownia Danych</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>PA0ynK9PCFoqXQnkAjRl3bul3Uc=2018-05-06 21:46:542018-05-06 21:44:35</TimeStamp>
+        <TimeStamp>qb/Tzk7HeU+Ovsdu6aVqK80ZEM0=2018-05-07 12:08:312018-05-07 12:08:31</TimeStamp>
         <ID>
-          <String>Hurtownia Danych - widok</String>
+          <String>Hurtownia Danych</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Ry1YmBE2hHI0OOrZUSfQy87DbMM=2018-05-06 21:46:542018-05-06 21:46:54</TimeStamp>
-        <ID>
-          <String>Czas</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>kdmDENcWn3kdVyiMvpkeGBoMxu8=2018-05-06 21:46:542018-05-06 21:46:54</TimeStamp>
+        <TimeStamp>exRc8clFMgFOsdtINE9IEbChfA0=2018-05-07 12:34:472018-05-07 12:08:50</TimeStamp>
         <ID>
           <String>Wnioskodawca</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>ntBWDwkStO7DYsSqROBUgX3bzyI=2018-05-06 21:46:542018-05-06 21:46:54</TimeStamp>
+        <TimeStamp>atHc3RTlRM+EM1m22N/rn2x3jiU=2018-05-07 12:28:152018-05-07 12:08:50</TimeStamp>
         <ID>
-          <String>Wniosek o Licencje</String>
+          <String>Czas</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>brnh/Ky74Q6rEHiBEyJt4Bs51YA=2018-05-06 21:46:542018-05-06 21:46:54</TimeStamp>
+        <TimeStamp>1syHLEZXhiyP/mOQe748CHb3loo=2018-05-07 12:31:452018-05-07 12:08:50</TimeStamp>
         <ID>
           <String>Nieruchomosc</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>pnKI8y7cgfR9k20C6IbbtjHSNf4=2018-05-06 21:46:542018-05-06 21:46:53fBAIjuvp3as5z79hoNNxuW6C26M=2018-05-06 21:46:542018-05-06 21:46:53</TimeStamp>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>plBe5Kte7z4+JlxCdxzJdWeIx+Q=2018-05-07 12:31:452018-05-07 12:08:50</TimeStamp>
         <ID>
-          <String>Hurtownia Danych - kostka</String>
+          <String>Wniosek o Licencje</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5Yb6xzCfWJkmETFJ5k081uuejJk=2018-05-07 12:34:472018-05-07 12:08:509jclVYoa1lLDbHQibFPufG05EcA=2018-05-07 12:08:512018-05-07 12:08:50</TimeStamp>
+        <ID>
+          <String>Hurtownia Danych</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -78,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2018-05-06T20:01:11.196667Z</LastDeployed>
+  <LastDeployed>2018-05-07T10:41:06.593333Z</LastDeployed>
 </DeploymentSnapshot>

@@ -1,0 +1,182 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d3ae58fe-6dd3-4064-8568-0e7c869f034a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hurtownia Danych</ID>
+  <Name>Hurtownia Danych</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Hurtownia Danych</DataSourceID>
+  <Schema>
+    <xs:schema id="Hurtownia_x0020_Danych" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Hurtownia_x0020_Danych" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="905248de-4b8b-4f42-bdcc-3863357c2077">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Czas" msprop:design-time-name="190c96b9-bc4c-427d-b373-c44b7ed46ed9" msprop:DbTableName="Czas" msprop:FriendlyName="Czas" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="czas_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1be1ee36-ebc8-431c-8371-1f92e668c306" msprop:DbColumnName="czas_id" msprop:FriendlyName="czas_id" type="xs:int" />
+                  <xs:element name="dzien" msprop:design-time-name="9cbf7131-97b8-42a0-9eff-591d68bb5997" msprop:DbColumnName="dzien" msprop:FriendlyName="dzien" type="xs:int" minOccurs="0" />
+                  <xs:element name="miesiac" msprop:design-time-name="0a6bb186-55b2-4193-8444-adaf4836a418" msprop:DbColumnName="miesiac" msprop:FriendlyName="miesiac" type="xs:int" minOccurs="0" />
+                  <xs:element name="rok" msprop:design-time-name="32f925d1-2626-4f6d-81dc-7fb52b8308f7" msprop:DbColumnName="rok" msprop:FriendlyName="rok" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fakt_rozpatrzenia_wniosku_o_licencje" msprop:design-time-name="8bf9d641-2f1b-4cdf-a05c-e90798ede417" msprop:DbTableName="Fakt_rozpatrzenia_wniosku_o_licencje" msprop:FriendlyName="Fakt_rozpatrzenia_wniosku_o_licencje" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fakt_rozpatrzenia_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="7f99548f-f9e3-4dac-9176-e9f2a1ece4e3" msprop:DbColumnName="fakt_rozpatrzenia_id" msprop:FriendlyName="fakt_rozpatrzenia_id" type="xs:int" />
+                  <xs:element name="nieruchomosc_id" msprop:design-time-name="44ebbc4a-e65b-44dd-aa2e-2cf0bd2e2bdd" msprop:DbColumnName="nieruchomosc_id" msprop:FriendlyName="nieruchomosc_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="wnioskodawca_id" msprop:design-time-name="ea1c8eb7-07e6-4354-983f-c538fe8c7c55" msprop:DbColumnName="wnioskodawca_id" msprop:FriendlyName="wnioskodawca_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="wniosek_o_licencje_id" msprop:design-time-name="81a80b60-c11c-467b-b1d7-954701458cdb" msprop:DbColumnName="wniosek_o_licencje_id" msprop:FriendlyName="wniosek_o_licencje_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="data_zlozenia_wniosku_id" msprop:design-time-name="c1d4313d-e519-4c8b-b132-0a3c8b10077f" msprop:DbColumnName="data_zlozenia_wniosku_id" msprop:FriendlyName="data_zlozenia_wniosku_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="data_rozpatrzenia_wniosku_id" msprop:design-time-name="b604b75e-31c3-4b3e-9d5b-197306a1155b" msprop:DbColumnName="data_rozpatrzenia_wniosku_id" msprop:FriendlyName="data_rozpatrzenia_wniosku_id" type="xs:int" minOccurs="0" />
+                  <xs:element name="ilosc_wnioskow_o_licencje" msprop:design-time-name="11293445-f0a2-45a0-bf2c-0e2c5aebd7f4" msprop:DbColumnName="ilosc_wnioskow_o_licencje" msprop:FriendlyName="ilosc_wnioskow_o_licencje" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Nieruchomosc" msprop:design-time-name="3be65e8a-86c7-4830-b8a5-a28839d6b776" msprop:DbTableName="Nieruchomosc" msprop:FriendlyName="Nieruchomosc" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="nieruchomosc_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9f387c00-4ac9-45d4-95c9-02620f6c503f" msprop:DbColumnName="nieruchomosc_id" msprop:FriendlyName="nieruchomosc_id" type="xs:int" />
+                  <xs:element name="adres" msprop:design-time-name="62afe3ad-d4d1-49b6-8d24-eeb181e7a22b" msprop:DbColumnName="adres" msprop:FriendlyName="adres" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="120" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="liczba_pokoi" msprop:design-time-name="7376d864-7c0c-4b45-845f-0b749865c535" msprop:DbColumnName="liczba_pokoi" msprop:FriendlyName="liczba_pokoi" type="xs:int" minOccurs="0" />
+                  <xs:element name="liczba_gosci" msprop:design-time-name="0f207a98-3e13-4a8e-b9cc-b06b383000d9" msprop:DbColumnName="liczba_gosci" msprop:FriendlyName="liczba_gosci" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Wniosek_o_licencje" msprop:design-time-name="e1c9a3d8-4431-45ee-8ce6-2eeaa039e849" msprop:DbTableName="Wniosek_o_licencje" msprop:FriendlyName="Wniosek_o_licencje" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wniosek_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="14104624-adc6-49a5-9856-2764961b819b" msprop:DbColumnName="wniosek_id" msprop:FriendlyName="wniosek_id" type="xs:int" />
+                  <xs:element name="status" msprop:design-time-name="d71ab0bc-718e-44cd-932b-3fb72c0190f9" msprop:DbColumnName="status" msprop:FriendlyName="status" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="rodzaj" msprop:design-time-name="1f4a1a32-039b-47d3-a18b-04fd3f47c6e5" msprop:DbColumnName="rodzaj" msprop:FriendlyName="rodzaj" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Wnioskodawca" msprop:design-time-name="66a46234-0276-4cb4-bc39-f9d8ae22b7f4" msprop:DbTableName="Wnioskodawca" msprop:FriendlyName="Wnioskodawca" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wnioskodawca_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="091f2ac8-632a-4c2e-8fd9-51c782918065" msprop:DbColumnName="wnioskodawca_id" msprop:FriendlyName="wnioskodawca_id" type="xs:int" />
+                  <xs:element name="nazwa" msprop:design-time-name="36c62731-6575-413a-b3e9-6045a3c7166e" msprop:DbColumnName="nazwa" msprop:FriendlyName="nazwa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="numer" msprop:design-time-name="41f15f90-b7d3-4737-9f04-94cabe189d7c" msprop:DbColumnName="numer" msprop:FriendlyName="numer" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="email" msprop:design-time-name="f4365785-e8da-4903-a83b-a5cdeb4afd4c" msprop:DbColumnName="email" msprop:FriendlyName="email" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Czas" />
+          <xs:field xpath="czas_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Fakt_rozpatrzenia_wniosku_o_licencje_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fakt_rozpatrzenia_wniosku_o_licencje" />
+          <xs:field xpath="fakt_rozpatrzenia_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Nieruchomosc_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Nieruchomosc" />
+          <xs:field xpath="nieruchomosc_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Wniosek_o_licencje_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Wniosek_o_licencje" />
+          <xs:field xpath="wniosek_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Wnioskodawca_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Wnioskodawca" />
+          <xs:field xpath="wnioskodawca_id" />
+        </xs:unique>
+        <xs:keyref name="FK__Fakt_rozp__wnios__5224328E" refer="dbo_Wniosek_o_licencje_Constraint1">
+          <xs:selector xpath=".//dbo_Fakt_rozpatrzenia_wniosku_o_licencje" />
+          <xs:field xpath="wniosek_o_licencje_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fakt_rozp__data___540C7B00" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fakt_rozpatrzenia_wniosku_o_licencje" />
+          <xs:field xpath="data_rozpatrzenia_wniosku_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fakt_rozp__nieru__503BEA1C" refer="dbo_Nieruchomosc_Constraint1">
+          <xs:selector xpath=".//dbo_Fakt_rozpatrzenia_wniosku_o_licencje" />
+          <xs:field xpath="nieruchomosc_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fakt_rozp__data___531856C7" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fakt_rozpatrzenia_wniosku_o_licencje" />
+          <xs:field xpath="data_zlozenia_wniosku_id" />
+        </xs:keyref>
+        <xs:keyref name="FK__Fakt_rozp__wnios__51300E55" refer="dbo_Wnioskodawca_Constraint1">
+          <xs:selector xpath=".//dbo_Fakt_rozpatrzenia_wniosku_o_licencje" />
+          <xs:field xpath="wnioskodawca_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Hurtownia_x0020_Danych xmlns="" />
+  </Schema>
+</DataSourceView>

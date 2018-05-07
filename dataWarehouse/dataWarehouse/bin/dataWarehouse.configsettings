@@ -13,21 +13,21 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Czas</ID>
-      </Dimension>
-      <Dimension>
         <ID>Wnioskodawca</ID>
       </Dimension>
       <Dimension>
-        <ID>Wniosek o Licencje</ID>
+        <ID>Czas</ID>
       </Dimension>
       <Dimension>
         <ID>Nieruchomosc</ID>
       </Dimension>
+      <Dimension>
+        <ID>Wniosek o Licencje</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Hurtownia Danych - kostka</ID>
+        <ID>Hurtownia Danych</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Fakt Rozpatrzenia Wniosku o Licencje</ID>

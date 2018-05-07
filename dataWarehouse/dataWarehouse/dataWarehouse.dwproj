@@ -8,32 +8,32 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Hurtownia Danych - kostka.cube</Name>
-      <FullPath>Hurtownia Danych - kostka.cube</FullPath>
+      <Name>Hurtownia Danych.cube</Name>
+      <FullPath>Hurtownia Danych.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Hurtownia Danych - kostka.partitions</Name>
-          <FullPath>Hurtownia Danych - kostka.partitions</FullPath>
+          <Name>Hurtownia Danych.partitions</Name>
+          <FullPath>Hurtownia Danych.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Czas.dim</Name>
-      <FullPath>Czas.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Wnioskodawca.dim</Name>
       <FullPath>Wnioskodawca.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Wniosek o Licencje.dim</Name>
-      <FullPath>Wniosek o Licencje.dim</FullPath>
+      <Name>Czas.dim</Name>
+      <FullPath>Czas.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Nieruchomosc.dim</Name>
       <FullPath>Nieruchomosc.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Wniosek o Licencje.dim</Name>
+      <FullPath>Wniosek o Licencje.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -44,8 +44,8 @@
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>Hurtownia Danych - widok.dsv</Name>
-      <FullPath>Hurtownia Danych - widok.dsv</FullPath>
+      <Name>Hurtownia Danych.dsv</Name>
+      <FullPath>Hurtownia Danych.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
