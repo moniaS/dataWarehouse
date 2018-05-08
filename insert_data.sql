@@ -214,4 +214,49 @@ END;
 ---------------Usuniecie niepotrzebnych kolumn z tabeli faktu-----------------
 ALTER TABLE Fakt_rozpatrzenia_wniosku_o_licencje
  DROP COLUMN adres, status, rodzaj, liczba_pokoi, liczba_gosci, dzien_roz, miesiac_roz, rok_roz, dzien_zl, miesiac_zl, rok_zl, nazwa, numer, email
-  
+
+---------------Uzupelnij miare w tabeli faktu-------------------
+DECLARE @FaktKursor CURSOR;
+DECLARE @FaktId INT;
+DECLARE @NieruchomoscId INT;
+DECLARE @CzasZlozeniaId INT;
+DECLARE @CzasRozpatrzeniaId INT;
+DECLARE @WniosekId INT;
+DECLARE @WnioskodawcaId INT;
+DECLARE @LiczbaWnioskow INT;
+
+BEGIN
+    SET @FaktKursor = CURSOR FOR
+    SELECT fakt_rozpatrzenia_id FROM Fakt_rozpatrzenia_wniosku_o_licencje;
+
+    OPEN @FaktKursor 
+    FETCH NEXT FROM @FaktKursor 
+    INTO @FaktId
+
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+		SELECT @WniosekId = wniosek_o_licencje_id, @NieruchomoscId = nieruchomosc_id, @WnioskodawcaId = wnioskodawca_id,
+		@CzasZlozeniaId = data_zlozenia_wniosku_id, @CzasRozpatrzeniaId = data_rozpatrzenia_wniosku_id FROM Fakt_rozpatrzenia_wniosku_o_licencje
+		WHERE fakt_rozpatrzenia_id = @FaktId
+		
+		SELECT @LiczbaWnioskow = COUNT(fakt_rozpatrzenia_id) FROM Fakt_rozpatrzenia_wniosku_o_licencje
+		WHERE wniosek_o_licencje_id = @WniosekId AND wnioskodawca_id = @WnioskodawcaId
+		AND nieruchomosc_id = @NieruchomoscId AND data_zlozenia_wniosku_id = @CzasZlozeniaId
+		AND data_rozpatrzenia_wniosku_id = @CzasRozpatrzeniaId
+
+		DELETE FROM Fakt_rozpatrzenia_wniosku_o_licencje
+		WHERE wniosek_o_licencje_id = @WniosekId AND wnioskodawca_id = @WnioskodawcaId
+		AND nieruchomosc_id = @NieruchomoscId AND data_zlozenia_wniosku_id = @CzasZlozeniaId
+		AND data_rozpatrzenia_wniosku_id = @CzasRozpatrzeniaId AND fakt_rozpatrzenia_id <> @FaktId
+
+		UPDATE Fakt_rozpatrzenia_wniosku_o_licencje
+		SET ilosc_wnioskow_o_licencje = @LiczbaWnioskow
+		WHERE fakt_rozpatrzenia_id = @FaktId
+		
+		FETCH NEXT FROM @FaktKursor 
+		INTO @FaktId
+    END; 
+
+    CLOSE @FaktKursor;
+    DEALLOCATE @FaktKursor;
+END;

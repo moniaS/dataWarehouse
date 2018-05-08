@@ -1,6 +1,6 @@
 CREATE TABLE Wnioskodawca
 ( wnioskodawca_id INT IDENTITY(1, 1),
-  nazwa CHAR(60) NOT NULL,
+  nazwa CHAR(60),
   numer CHAR(50),
   email CHAR(150),
   CONSTRAINT klucz_wnioskodawca PRIMARY KEY (wnioskodawca_id)
@@ -40,6 +40,4 @@ CREATE TABLE Fakt_rozpatrzenia_wniosku_o_licencje
   ilosc_wnioskow_o_licencje INT,
   CONSTRAINT klucz_fakt_rozpatrzenia_licencji PRIMARY KEY(fakt_rozpatrzenia_id)
 )
-
-
 

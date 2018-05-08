@@ -67,3 +67,7 @@ rok_zl = YEAR(data_zlozenia),
 dzien_roz = DAY(data_rozpatrzenia),
 miesiac_roz = MONTH(data_rozpatrzenia),
 rok_roz = YEAR(data_rozpatrzenia)
+
+UPDATE data
+SET liczba_pokoi = 10, liczba_gosci = 20
+WHERE liczba_pokoi = 0 AND liczba_gosci = 0
